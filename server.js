@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 const { initModels } = require('./models');
 const authRoutes = require('./routes/authRoutes');
-const errorHandler = require('./middlewares/errorHandler');
+const errorHandler = require('./middleware/errorHandler');
 
 app.use(express.json());
 app.use('/api/auth', authRoutes);
